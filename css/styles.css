@@ -50,6 +50,10 @@ body.active {
   z-index: -1;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 .no-js #experience-timeline > div {
   background: #fff;
   padding: 10px;
