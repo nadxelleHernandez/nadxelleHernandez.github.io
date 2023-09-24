@@ -10,13 +10,12 @@
     portfolio website.
 */
 
+const currentYearSpan = document.getElementById('current-year');
+currentYearSpan.textContent = new Date().getFullYear();
+
+document.getElementsByClassName('no-js')[0].classList.remove('no-js');
+
 (function($) {
-
-    // Show current year
-    $("#current-year").text(new Date().getFullYear());
-
-    // Remove no-js class
-    $('html').removeClass('no-js');
 
     // Animate to section when nav is clicked
     $('header a').click(function(e) {
@@ -51,32 +50,6 @@
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
         }, 500);
-    });
-
-    // Create timeline
-    $('#experience-timeline').each(function() {
-
-        $this = $(this); // Store reference to this
-        $userContent = $this.children('div'); // user content
-
-        // Create each timeline block
-        $userContent.each(function() {
-            $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
-        });
-
-        // Add icons to each block
-        $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
-        });
-
-        // Add dates to the timeline if exists
-        $this.find('.vtimeline-content').each(function() {
-            var date = $(this).data('date');
-            if (date) { // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
-            }
-        });
-
     });
 
     // Open mobile menu

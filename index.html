@@ -8,7 +8,7 @@
     <title>Nadxelle Hernandez Portfolio</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> -->
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -75,9 +75,9 @@
                     <p>
                         I’m a self-lead <span class="bold">Software Developer Engineer</span> with experience designing, testing, implementing, 
                         and maintaining software. I’m a critical thinking professional experienced in different programing languages like JavaScript, 
-                        Python, TypeScript, Java and C#. I love to learn new tools and technologies relevant to software engineering and I’m committed 
-                        to following industry standards and best practices. As a mom I have developed great communication skills, conflict resolution and polished my planning and organizational skills.
-                         I’m really looking forward go back to work, use my wisdom, and pour out my soft skills doing what I love.
+                        Python, TypeScript, Java and C#. I love learning new tools and tech-stacks and I’m committed to follow industry standards and best practices. 
+                        As a mom, I have developed great communication skills, resourcefulness, conflict resolution and polished my planning and organizational skills.
+                        I’m eager to return to the industry and use my wisdom and soft skills doing what I love.
                     </p>
                 </div>
             </div>
@@ -93,6 +93,7 @@
             <li>Angular</li>
             <li>TypeScript</li>
             <li>React</li>
+            <li>HTML</li>
             <li>SCSS</li>
             <li>CSS</li>
             <li>RESTful APIs</li>
@@ -110,28 +111,44 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon">
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="vtimeline-block">
+                    <span class="vtimeline-date">February 2023 - July 2023</span>
+                    <div class="vtimeline-content">
+                        <h3>Thomson-Reuters FindLaw</h3>
+                        <h4>Software Developer Intern</h4>
+                        <p><span class="italics">Frontend development:</span></p>
+                        <ul>
+                            <li>Created a universal modal component from scratch only using JavaScript and SASS that was reusable, loadable from DOM, with predefined styles and flagged for production. It enhanced the modals performance by at least 50% on its Core Web Vitals scores.</li>
+                            <li>Improved the accessibility of FindLaw by changing the links styling over the website in a compartmentalized approach, as proper testing needed to be ensured in each subdomain of the site.</li>
+                            <li>Fixed around 40 bugs before the release of their Profile Updater (PU), an Angular webapp in just a month. I also created a couple components for the application.</li>
+                            <li>Updated old jQuery code to ES6 JavaScript to improve performance in lawyers.findlaw.com. This task involved analyzing over 800 lines of code, testing and removing unused code.</li>
+                            <li>During my internship I did at least a code review daily, deployed my PRs in Jenkins and troubleshooted deployment errors to notify the right people.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon">
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="vtimeline-block">
+                    <span class="vtimeline-date">2004 - 2008</span>
+                    <div class="vtimeline-content">
+                        <h3>TV Azteca</h3>
+                        <h4>Software Developer Engineer</h4>
+                        <ul>
+                            <li>Developed, tested, deployed, and maintained the <span class="italics">Asset Management system</span> in C++. It was a client-server application used by the edition department. It generated reports of the music used. This music could be manually ingested or loaded automatically from pro-tools editors. The system also allowed nonlinear edition of audio files and real time audio decoding. This system saved the company thousands of dollars as they were able to report more accurately which music had been used and limit the tracks of more expensive/licensed music.</li>
+                            <li>Built a multithreading application in C# that provided real time stock market data visualization to the administration department.</li>
+                            <li>Designed, developed, tested, and maintained their <span class="italics">Audience Analysis System</span>. This webapp coded in Java was used by the production team for new in-house content. It allowed them to analyze scripts by adding to them metadata like images, emotional reactions, videos of the actual recording and ratings.  It included printed reports of their analysis in customized sized paper.</li>
+                            <li>Developed, deployed, and implemented in C++ the <span class="italics">Automatic Updates System</span> for all the team’s apps.</li>
+                            <li>Designed and started developing a new WebApp for managing their video asset in Java using Hibernate-Spring.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -140,30 +157,17 @@
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
+            <h3>ADA Developers Academy</h3>
+            <span class="education-date">Oct 2022 - Feb 2023</span>
+            <h4>Software Developer</h4>
+            <p>Courses in Python, Flask, SQLAlchemy, JavaScript, React and Algorithms</p>
         </div>
         <!-- End .education-block -->
 
         <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
+            <h3>Universidad Nacional Autonoma de Mexico</h3>
+            <span class="education-date">2005</span>
+            <h4>Bachelor in Computer Engineering</h4>
         </div>
         <!-- End .education-block -->
     </div>
@@ -175,31 +179,32 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/ReviewgramReact.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>ReviewGram (Angular Version)</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            I rewrote the front-end of ReviewGram in Angular. I also used SCSS instead of CSS. This is a work in progress
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/nadxelleHernandez/reviewgram-frontEnd-angular">View</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
-
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/ReviewgramReact.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>ReviewGram (React, Python)</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            A full stack webApp for finding reviews and ratings of TV shows and movies while keeping your own watchlists. 
+                            Front-end was developed using React, CSS bootstrap components. Backend was made using python, Flask and a PostgreSQL database.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/nadxelleHernandez/reviewgram-front-end">Frontend</a> | 
+                        <a href="https://github.com/nadxelleHernandez/reviewgram-backend">Backend</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -212,12 +217,22 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
+            <p><a href="mailto:nadxellehernandez@gmail.com">nadxellehernandez@gmail.com</p>
+            <ul>
+                 <li>
+                    <a href="https://github.com/nadxelleHernandez" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nadxelle-hernandez/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            
+            <!-- <form method="POST" action="https://formspree.io/nadxelleHernandez@gmail.com">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
-            </form>
+            </form> -->
         </div>
         <!-- End #contact-form -->
     </div>
@@ -228,7 +243,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; <span id="current-year">2022</span> YOUR NAME
+                        Copyright &copy; <span id="current-year">2022</span> Nadxelle Hernandez
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -239,22 +254,10 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/nadxelleHernandez" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/nadxelle-hernandez/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -263,8 +266,8 @@
     </footer>
     <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

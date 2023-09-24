@@ -98,6 +98,10 @@ body {
     font-weight: 600;
 }
 
+.italics {
+    font-style: italic;
+}
+
 // No JS styles
 .no-js {
     #experience-timeline {
@@ -538,6 +542,13 @@ footer {
         color: $text;
         font-size: 0.9em;
         margin: 0;
+        .italics {
+            font-size: 1.1em;
+        }
+    }
+    ul {
+        color: $text;
+        font-size: 1em;
     }
 }
 
@@ -658,6 +669,9 @@ footer {
 
 .project-image {
     float: left;
+    img {
+        max-width: 320px;
+    }
 }
 
 .project-info {
@@ -770,6 +784,37 @@ footer {
         }
     }
 
+    a {
+        text-decoration: underline;
+        color: #fff;
+        &:visited {
+            color: #967E76;
+        }
+        &:hover {
+            color: #374054;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        li {
+            display: inline-block;
+            padding-right: 20px;
+            font-size: 2rem;
+            //margin-left: -20px;
+            margin-right: 20px;
+        }
+        a {
+           &:hover {
+                color: #374054;
+           }
+           &:visited {
+                color: #967E76;
+           }
+        }
+    }
+
     textarea {
         height: 150px;
         resize: none;
@@ -872,6 +917,13 @@ footer {
 
     .vtimeline-content {
         margin-left: 70px;
+        ul {
+            list-style: none;
+        }
+        li {
+            margin-bottom: 10px;
+            margin-left: -30px;
+        }
     }
 
 }

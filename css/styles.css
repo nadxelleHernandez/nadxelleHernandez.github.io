@@ -54,6 +54,10 @@ body.active {
   font-weight: 600;
 }
 
+.italics {
+  font-style: italic;
+}
+
 .no-js #experience-timeline > div {
   background: #fff;
   padding: 10px;
@@ -447,6 +451,13 @@ footer {
   font-size: 0.9em;
   margin: 0;
 }
+.vtimeline-content p .italics {
+  font-size: 1.1em;
+}
+.vtimeline-content ul {
+  color: #494E65;
+  font-size: 1em;
+}
 
 .vtimeline-point {
   position: relative;
@@ -555,6 +566,9 @@ footer {
 
 .project-image {
   float: left;
+}
+.project-image img {
+  max-width: 320px;
 }
 
 .project-info {
@@ -666,6 +680,32 @@ footer {
   outline: none;
   background: #4d536b;
 }
+#contact-form a {
+  text-decoration: underline;
+  color: #fff;
+}
+#contact-form a:visited {
+  color: #967E76;
+}
+#contact-form a:hover {
+  color: #374054;
+}
+#contact-form ul {
+  list-style: none;
+  margin: 0;
+}
+#contact-form ul li {
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+#contact-form ul a:hover {
+  color: #374054;
+}
+#contact-form ul a:visited {
+  color: #967E76;
+}
 #contact-form textarea {
   height: 150px;
   resize: none;
@@ -750,6 +790,13 @@ footer {
   }
   .vtimeline-content {
     margin-left: 70px;
+  }
+  .vtimeline-content ul {
+    list-style: none;
+  }
+  .vtimeline-content li {
+    margin-bottom: 10px;
+    margin-left: -30px;
   }
 }
 @media only screen and (max-width: 992px) {
