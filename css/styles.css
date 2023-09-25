@@ -588,6 +588,7 @@ footer {
   color: #494E65;
   margin: 0 0 15px 0;
   font-size: 0.9em;
+  padding-left: 20px;
 }
 
 .no-image .project-info {
