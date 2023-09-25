@@ -789,7 +789,7 @@ footer {
         text-decoration: underline;
         color: #fff;
         &:visited {
-            color: #967E76;
+            color: #fff;
         }
         &:hover {
             color: #374054;
@@ -807,11 +807,11 @@ footer {
             margin-right: 20px;
         }
         a {
+           &:visited {
+                color: #fff;
+           }
            &:hover {
                 color: #374054;
-           }
-           &:visited {
-                color: #967E76;
            }
         }
     }

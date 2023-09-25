@@ -686,7 +686,7 @@ footer {
   color: #fff;
 }
 #contact-form a:visited {
-  color: #967E76;
+  color: #fff;
 }
 #contact-form a:hover {
   color: #374054;
@@ -701,11 +701,11 @@ footer {
   font-size: 2rem;
   margin-right: 20px;
 }
+#contact-form ul a:visited {
+  color: #fff;
+}
 #contact-form ul a:hover {
   color: #374054;
-}
-#contact-form ul a:visited {
-  color: #967E76;
 }
 #contact-form textarea {
   height: 150px;
